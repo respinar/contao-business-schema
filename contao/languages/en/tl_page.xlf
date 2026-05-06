@@ -3,7 +3,7 @@
   <file datatype="php" original="contao/languages/en/tl_page.php" source-language="en">
     <body>
       <trans-unit id="tl_page.organization_legend">
-        <source>Organization</source>
+        <source>Organization Schema.org</source>
       </trans-unit>
       <trans-unit id="tl_page.orgschema_name.0">
         <source>Organization name</source>
