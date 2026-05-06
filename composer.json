@@ -1,0 +1,29 @@
+{
+    "name": "respinar/contao-organization-schema",
+    "type": "contao-bundle",
+    "description": "Contao bundle for managing Organization Schema.org data from the root page",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "contao/core-bundle": "^5.7"
+    },
+    "require-dev": {
+        "contao/easy-coding-standard": "^6.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Respinar\\OrganizationSchemaBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Respinar\\OrganizationSchemaBundle\\ContaoManager\\Plugin"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true
+        }
+    }
+}
