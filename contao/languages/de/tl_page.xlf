@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="contao/languages/de/tl_page.php" source-language="de">
+    <body>
+      <trans-unit id="tl_page.organization_legend">
+        <source>Organisation</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_name.0">
+        <source>Name der Organisation</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_name.1">
+        <source>Geben Sie den Namen der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_legal_name.0">
+        <source>Offizieller Firmenname</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_legal_name.1">
+        <source>Geben Sie den offiziellen Firmennamen der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_alternate_name.0">
+        <source>Alternativer Name</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_alternate_name.1">
+        <source>Geben Sie einen Alias- oder alternativen Namen für die Organisation ein. Trennen Sie mehrere Namen durch Kommas (z. B. "Foolad Gharb, FooladGharb").</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_url.0">
+        <source>Website-URL</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_url.1">
+        <source>Geben Sie die URL der Website der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_description.0">
+        <source>Beschreibung der Organisation</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_description.1">
+        <source>Geben Sie eine kurze Beschreibung der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_logo.0">
+        <source>Logo</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_logo.1">
+        <source>Wählen Sie das Logo der Organisation.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_telephone.0">
+        <source>Telefon</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_telephone.1">
+        <source>Geben Sie die Telefonnummer der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_email.0">
+        <source>E-Mail-Adresse</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_email.1">
+        <source>Geben Sie die E-Mail-Adresse der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_street_address.0">
+        <source>Straße</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_street_address.1">
+        <source>Geben Sie die Straße der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_postal_code.0">
+        <source>Postleitzahl</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_postal_code.1">
+        <source>Geben Sie die Postleitzahl der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_address_locality.0">
+        <source>Stadt / Ort</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_address_locality.1">
+        <source>Geben Sie die Stadt oder den Ort der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_address_region.0">
+        <source>Bundesland / Region</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_address_region.1">
+        <source>Geben Sie das Bundesland oder die Region der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_address_country.0">
+        <source>Land</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_address_country.1">
+        <source>Geben Sie das Land der Organisation ein.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_same_as.0">
+        <source>Soziale Profile</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_same_as.1">
+        <source>Geben Sie die URLs der Social-Media-Profile der Organisation ein.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
