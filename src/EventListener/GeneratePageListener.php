@@ -47,7 +47,10 @@ class GeneratePageListener
         $graph = $jsonLdManager->getGraphForSchema(JsonLdManager::SCHEMA_ORG);
         $id = Environment::get('url').'/#organization';
 
-        $org = $graph->organization($id);
+        $org = match ($rootPage->orgschema_type) {
+            'local_business' => $graph->localBusiness($id),
+            default => $graph->organization($id),
+        };
         $org->name($rootPage->orgschema_name);
 
         if (!empty($rootPage->orgschema_legal_name)) {
