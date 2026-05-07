@@ -5,6 +5,18 @@
       <trans-unit id="tl_page.organization_legend">
         <source>Organisation</source>
       </trans-unit>
+      <trans-unit id="tl_page.orgschema_type.0">
+        <source>Schema-Typ</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type.1">
+        <source>Wählen Sie den Schema.org-Typ für diese Organisation.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type_options.organization">
+        <source>Organisation</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type_options.local_business">
+        <source>Lokales Unternehmen</source>
+      </trans-unit>
       <trans-unit id="tl_page.orgschema_name.0">
         <source>Name der Organisation</source>
       </trans-unit>
