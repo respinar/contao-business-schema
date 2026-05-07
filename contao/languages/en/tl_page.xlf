@@ -3,7 +3,19 @@
   <file datatype="php" original="contao/languages/en/tl_page.php" source-language="en">
     <body>
       <trans-unit id="tl_page.organization_legend">
-        <source>Organization Schema.org</source>
+        <source>Organization</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type.0">
+        <source>Schema type</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type.1">
+        <source>Choose the Schema.org type for this organization.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type_options.organization">
+        <source>Organization</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type_options.local_business">
+        <source>Local business</source>
       </trans-unit>
       <trans-unit id="tl_page.orgschema_name.0">
         <source>Organization name</source>
