@@ -5,6 +5,18 @@
       <trans-unit id="tl_page.organization_legend">
         <source>سازمان</source>
       </trans-unit>
+      <trans-unit id="tl_page.orgschema_type.0">
+        <source>نوع شِما</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type.1">
+        <source>نوع Schema.org این سازمان را انتخاب کنید.</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type_options.organization">
+        <source>سازمان</source>
+      </trans-unit>
+      <trans-unit id="tl_page.orgschema_type_options.local_business">
+        <source>کسب‌وکار محلی</source>
+      </trans-unit>
       <trans-unit id="tl_page.orgschema_name.0">
         <source>نام سازمان</source>
       </trans-unit>
