@@ -2,7 +2,7 @@
 
 ## Project
 
-`respinar/contao-organization-schema`
+`respinar/contao-business-schema`
 
 A small Contao bundle for managing Organization Schema.org data from the Contao root page.
 
@@ -35,6 +35,7 @@ The Organization configuration should provide these fields:
 
 ### Identity
 
+* `orgschema_type`
 * `orgschema_name`
 * `orgschema_legal_name`
 * `orgschema_alternate_name`
@@ -61,7 +62,7 @@ The Organization configuration should provide these fields:
 
 ## Schema
 
-* Use `https://schema.org/Organization`.
+* Use `https://schema.org/Organization` or `https://schema.org/LocalBusiness` depending on `orgschema_type`.
 * Use a stable `@id` for the Organization.
 * The `@id` should normally be based on the website URL, for example:
   `https://example.com/#organization`
