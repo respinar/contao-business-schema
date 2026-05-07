@@ -29,8 +29,11 @@ Then install and activate the bundle through the [Contao Manager](https://contao
 
 Once installed, open the **root page** in the Contao back end. An **Organization** section appears below the *Meta information* section where you can enter:
 
+Start by choosing the **Schema type** — either `Organization` or `Local business` — which determines the `@type` of the output node.
+
 ### Identity
 
+- Schema type *(Organization or Local business)*
 - Name
 - Legal name
 - Alternate name *(comma-separated to allow multiple names)*
