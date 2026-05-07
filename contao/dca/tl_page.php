@@ -16,6 +16,7 @@ PaletteManipulator::create()
     ->addLegend('organization_legend', 'meta_legend', PaletteManipulator::POSITION_AFTER)
     ->addField(
         [
+            'orgschema_type',
             'orgschema_name',
             'orgschema_legal_name',
             'orgschema_alternate_name',
@@ -37,6 +38,14 @@ PaletteManipulator::create()
     ->applyToPalette('root', 'tl_page')
     ->applyToPalette('rootfallback', 'tl_page')
 ;
+
+$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_type'] = [
+    'inputType' => 'select',
+    'options' => ['organization', 'local_business'],
+    'reference' => &$GLOBALS['TL_LANG']['tl_page']['orgschema_type_options'],
+    'eval' => ['tl_class' => 'w50'],
+    'default' => 'organization',
+];
 
 $GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_name'] = [
     'inputType' => 'text',
