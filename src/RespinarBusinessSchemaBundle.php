@@ -3,20 +3,20 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Contao Organization Bundle.
+ * This file is part of Contao Business Bundle.
  *
  * (c) Hamid Peywasti
  *
  * @license MIT
  */
 
-namespace Respinar\OrganizationSchemaBundle;
+namespace Respinar\BusinessSchemaBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class RespinarOrganizationSchemaBundle extends AbstractBundle
+class RespinarBusinessSchemaBundle extends AbstractBundle
 {
     public function loadExtension(array $config, ContainerConfigurator $containerConfigurator, ContainerBuilder $containerBuilder): void
     {
