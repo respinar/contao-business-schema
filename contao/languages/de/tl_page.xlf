@@ -29,6 +29,12 @@
       <trans-unit id="tl_page.business_legal_name.1">
         <source>Geben Sie den offiziellen Firmennamen der Organisation ein.</source>
       </trans-unit>
+      <trans-unit id="tl_page.business_founding_date.0">
+        <source>Gründungsdatum</source>
+      </trans-unit>
+      <trans-unit id="tl_page.business_founding_date.1">
+        <source>Geben Sie das Gründungsdatum der Organisation ein (ISO 8601, z. B. "1995-03-14").</source>
+      </trans-unit>
       <trans-unit id="tl_page.business_alternate_name.0">
         <source>Alternativer Name</source>
       </trans-unit>
@@ -51,7 +57,7 @@
         <source>Logo</source>
       </trans-unit>
       <trans-unit id="tl_page.business_logo.1">
-        <source>Wählen Sie das Logo der Organisation.</source>
+        <source>Wählen Sie das Logo der Organisation. Das Logo wird als Bildobjekt mit URL, Breite und Höhe ausgegeben.</source>
       </trans-unit>
       <trans-unit id="tl_page.business_telephone.0">
         <source>Telefon</source>

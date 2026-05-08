@@ -29,6 +29,12 @@
       <trans-unit id="tl_page.business_legal_name.1">
         <source>نام حقوقی رسمی سازمان را وارد کنید.</source>
       </trans-unit>
+      <trans-unit id="tl_page.business_founding_date.0">
+        <source>تاریخ تأسیس</source>
+      </trans-unit>
+      <trans-unit id="tl_page.business_founding_date.1">
+        <source>تاریخ تأسیس سازمان را وارد کنید (ISO 8601، مثلاً «1995-03-14»).</source>
+      </trans-unit>
       <trans-unit id="tl_page.business_alternate_name.0">
         <source>نام جایگزین</source>
       </trans-unit>
@@ -51,7 +57,7 @@
         <source>نشان (لوگو)</source>
       </trans-unit>
       <trans-unit id="tl_page.business_logo.1">
-        <source>نشان (لوگو) سازمان را انتخاب کنید.</source>
+        <source>نشان (لوگو) سازمان را انتخاب کنید. لوگو به‌عنوان یک شیء تصویری با نشانی، عرض و ارتفاع خروجی داده می‌شود.</source>
       </trans-unit>
       <trans-unit id="tl_page.business_telephone.0">
         <source>تلفن</source>
