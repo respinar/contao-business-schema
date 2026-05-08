@@ -20,13 +20,16 @@ use Contao\FilesModel;
 use Contao\PageModel;
 use Contao\StringUtil;
 use Spatie\SchemaOrg\ContactPoint;
+use Spatie\SchemaOrg\ImageObject;
 use Spatie\SchemaOrg\PostalAddress;
 
 #[AsHook('generatePage')]
 class GeneratePageListener
 {
-    public function __construct(private readonly ResponseContextAccessor $responseContextAccessor)
-    {
+    public function __construct(
+        private readonly ResponseContextAccessor $responseContextAccessor,
+        private readonly string $projectDir,
+    ) {
     }
 
     public function __invoke(PageModel $pageModel): void
@@ -58,6 +61,12 @@ class GeneratePageListener
             $org->legalName($rootPage->business_legal_name);
         }
 
+        if (!empty($rootPage->business_founding_date)) {
+            $org->foundingDate(
+                date('Y-m-d', $rootPage->business_founding_date),
+            );
+        }
+
         if (!empty($rootPage->business_alternate_name)) {
             $alternateNames = array_values(array_filter(array_map(
                 static fn (string $name): string => trim($name),
@@ -78,10 +87,10 @@ class GeneratePageListener
         }
 
         if (!empty($rootPage->business_logo)) {
-            $logoUrl = $this->resolveFileUrl($rootPage->business_logo);
+            $logo = $this->resolveImageObject($rootPage->business_logo);
 
-            if (null !== $logoUrl) {
-                $org->logo($logoUrl);
+            if (null !== $logo) {
+                $org->logo($logo);
             }
         }
 
@@ -140,7 +149,7 @@ class GeneratePageListener
         }
     }
 
-    private function resolveFileUrl(string $uuid): string|null
+    private function resolveImageObject(string $uuid): ImageObject|null
     {
         $model = FilesModel::findByUuid($uuid);
 
@@ -148,6 +157,15 @@ class GeneratePageListener
             return null;
         }
 
-        return Environment::get('url').'/'.$model->path;
+        $file = $this->projectDir.'/'.$model->path;
+        $image = new ImageObject();
+        $image->url(Environment::get('url').'/'.$model->path);
+
+        if (is_file($file) && false !== ($size = @getimagesize($file))) {
+            $image->width($size[0]);
+            $image->height($size[1]);
+        }
+
+        return $image;
     }
 }
