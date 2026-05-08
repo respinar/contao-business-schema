@@ -93,7 +93,7 @@
         <source>Land</source>
       </trans-unit>
       <trans-unit id="tl_page.business_address_country.1">
-        <source>Geben Sie das Land der Organisation ein.</source>
+        <source>Geben Sie den zweibuchstabigen Ländercode gemäß ISO 3166-1 ein, z. B. DE für Deutschland.</source>
       </trans-unit>
       <trans-unit id="tl_page.business_same_as.0">
         <source>Soziale Profile</source>
