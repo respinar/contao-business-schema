@@ -16,21 +16,21 @@ PaletteManipulator::create()
     ->addLegend('organization_legend', 'meta_legend', PaletteManipulator::POSITION_AFTER)
     ->addField(
         [
-            'orgschema_type',
-            'orgschema_name',
-            'orgschema_legal_name',
-            'orgschema_alternate_name',
-            'orgschema_url',
-            'orgschema_description',
-            'orgschema_logo',
-            'orgschema_telephone',
-            'orgschema_email',
-            'orgschema_street_address',
-            'orgschema_postal_code',
-            'orgschema_address_locality',
-            'orgschema_address_region',
-            'orgschema_address_country',
-            'orgschema_same_as',
+            'business_type',
+            'business_name',
+            'business_legal_name',
+            'business_alternate_name',
+            'business_url',
+            'business_description',
+            'business_logo',
+            'business_telephone',
+            'business_email',
+            'business_street_address',
+            'business_postal_code',
+            'business_address_locality',
+            'business_address_region',
+            'business_address_country',
+            'business_same_as',
         ],
         'organization_legend',
         PaletteManipulator::POSITION_APPEND,
@@ -39,80 +39,80 @@ PaletteManipulator::create()
     ->applyToPalette('rootfallback', 'tl_page')
 ;
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_type'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_type'] = [
     'inputType' => 'select',
     'options' => ['organization', 'local_business'],
-    'reference' => &$GLOBALS['TL_LANG']['tl_page']['orgschema_type_options'],
+    'reference' => &$GLOBALS['TL_LANG']['tl_page']['business_type_options'],
     'eval' => ['tl_class' => 'w50'],
     'default' => 'organization',
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_name'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_name'] = [
+    'inputType' => 'text',
+    'eval' => ['maxlength' => 255, 'tl_class' => 'w50 clr'],
+];
+
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_legal_name'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_legal_name'] = [
-    'inputType' => 'text',
-    'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
-];
-
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_alternate_name'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_alternate_name'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50', 'placeholder' => 'Name 1, Name 2'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_url'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_url'] = [
     'inputType' => 'text',
     'eval' => ['rgxp' => 'url', 'decodeEntities' => true, 'maxlength' => 2048, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_description'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_description'] = [
     'inputType' => 'textarea',
     'eval' => ['tl_class' => 'clr'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_logo'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_logo'] = [
     'inputType' => 'fileTree',
     'eval' => ['filesOnly' => true, 'fieldType' => 'radio', 'tl_class' => 'clr'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_telephone'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_telephone'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_email'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_email'] = [
     'inputType' => 'text',
     'eval' => ['rgxp' => 'email', 'maxlength' => 255, 'decodeEntities' => true, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_street_address'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_street_address'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_postal_code'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_postal_code'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_address_locality'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_address_locality'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_address_region'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_address_region'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_address_country'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_address_country'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
 ];
 
-$GLOBALS['TL_DCA']['tl_page']['fields']['orgschema_same_as'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_same_as'] = [
     'inputType' => 'listWizard',
     'eval' => [],
 ];
