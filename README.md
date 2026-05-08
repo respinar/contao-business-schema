@@ -1,4 +1,4 @@
-# Contao Organization Schema
+# Contao Business Schema
 
 A lightweight [Contao](https://contao.org) bundle for managing [Organization](https://schema.org/Organization) Schema.org data from the root page and adding it to Contao's existing Schema.org / JSON-LD graph.
 
@@ -20,7 +20,7 @@ A lightweight [Contao](https://contao.org) bundle for managing [Organization](ht
 Install the bundle via Composer:
 
 ```bash
-composer require respinar/contao-organization-schema
+composer require respinar/contao-business-schema
 ```
 
 Then install and activate the bundle through the [Contao Manager](https://contao.org/en/manager.html) or `contao/installer`.
