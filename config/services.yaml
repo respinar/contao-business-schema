@@ -3,6 +3,6 @@ services:
         autowire: true
         autoconfigure: true
 
-    Respinar\OrganizationSchemaBundle\:
+    Respinar\BusinessSchemaBundle\:
         resource: ../src/
         exclude: ../src/ContaoManager/
