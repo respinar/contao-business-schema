@@ -35,34 +35,34 @@ The Organization configuration should provide these fields:
 
 ### Identity
 
-* `orgschema_type`
-* `orgschema_name`
-* `orgschema_legal_name`
-* `orgschema_alternate_name`
-* `orgschema_description`
-* `orgschema_url`
-* `orgschema_logo`
+* `business_type`
+* `business_name`
+* `business_legal_name`
+* `business_alternate_name`
+* `business_description`
+* `business_url`
+* `business_logo`
 
 ### Contact
 
-* `orgschema_telephone`
-* `orgschema_email`
+* `business_telephone`
+* `business_email`
 
 ### Address
 
-* `orgschema_street_address`
-* `orgschema_postal_code`
-* `orgschema_address_locality`
-* `orgschema_address_region`
-* `orgschema_address_country`
+* `business_street_address`
+* `business_postal_code`
+* `business_address_locality`
+* `business_address_region`
+* `business_address_country`
 
 ### Social Profiles
 
-* `orgschema_same_as`
+* `business_same_as`
 
 ## Schema
 
-* Use `https://schema.org/Organization` or `https://schema.org/LocalBusiness` depending on `orgschema_type`.
+* Use `https://schema.org/Organization` or `https://schema.org/LocalBusiness` depending on `business_type`.
 * Use a stable `@id` for the Organization.
 * The `@id` should normally be based on the website URL, for example:
   `https://example.com/#organization`
