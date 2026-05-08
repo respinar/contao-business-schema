@@ -5,100 +5,100 @@
       <trans-unit id="tl_page.organization_legend">
         <source>سازمان</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_type.0">
+      <trans-unit id="tl_page.business_type.0">
         <source>نوع شِما</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_type.1">
+      <trans-unit id="tl_page.business_type.1">
         <source>نوع Schema.org این سازمان را انتخاب کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_type_options.organization">
+      <trans-unit id="tl_page.business_type_options.organization">
         <source>سازمان</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_type_options.local_business">
+      <trans-unit id="tl_page.business_type_options.local_business">
         <source>کسب‌وکار محلی</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_name.0">
+      <trans-unit id="tl_page.business_name.0">
         <source>نام سازمان</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_name.1">
+      <trans-unit id="tl_page.business_name.1">
         <source>نام سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_legal_name.0">
+      <trans-unit id="tl_page.business_legal_name.0">
         <source>نام حقوقی</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_legal_name.1">
+      <trans-unit id="tl_page.business_legal_name.1">
         <source>نام حقوقی رسمی سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_alternate_name.0">
+      <trans-unit id="tl_page.business_alternate_name.0">
         <source>نام جایگزین</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_alternate_name.1">
+      <trans-unit id="tl_page.business_alternate_name.1">
         <source>نام مستعار یا جایگزین سازمان را وارد کنید. برای چند نام، آنها را با کاما جدا کنید (مثلاً «فولاد غرب، FooladGharb»).</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_url.0">
+      <trans-unit id="tl_page.business_url.0">
         <source>نشانی وب‌سایت</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_url.1">
+      <trans-unit id="tl_page.business_url.1">
         <source>نشانی وب‌سایت سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_description.0">
+      <trans-unit id="tl_page.business_description.0">
         <source>توضیحات سازمان</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_description.1">
+      <trans-unit id="tl_page.business_description.1">
         <source>توضیح کوتاهی درباره سازمان وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_logo.0">
+      <trans-unit id="tl_page.business_logo.0">
         <source>نشان (لوگو)</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_logo.1">
+      <trans-unit id="tl_page.business_logo.1">
         <source>نشان (لوگو) سازمان را انتخاب کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_telephone.0">
+      <trans-unit id="tl_page.business_telephone.0">
         <source>تلفن</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_telephone.1">
+      <trans-unit id="tl_page.business_telephone.1">
         <source>شماره تلفن سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_email.0">
+      <trans-unit id="tl_page.business_email.0">
         <source>نشانی ایمیل</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_email.1">
+      <trans-unit id="tl_page.business_email.1">
         <source>نشانی ایمیل سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_street_address.0">
+      <trans-unit id="tl_page.business_street_address.0">
         <source>آدرس خیابان</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_street_address.1">
+      <trans-unit id="tl_page.business_street_address.1">
         <source>آدرس خیابان سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_postal_code.0">
+      <trans-unit id="tl_page.business_postal_code.0">
         <source>کد پستی</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_postal_code.1">
+      <trans-unit id="tl_page.business_postal_code.1">
         <source>کد پستی سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_address_locality.0">
+      <trans-unit id="tl_page.business_address_locality.0">
         <source>شهر / منطقه</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_address_locality.1">
+      <trans-unit id="tl_page.business_address_locality.1">
         <source>شهر یا محل سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_address_region.0">
+      <trans-unit id="tl_page.business_address_region.0">
         <source>استان / ناحیه</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_address_region.1">
+      <trans-unit id="tl_page.business_address_region.1">
         <source>استان یا ناحیه سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_address_country.0">
+      <trans-unit id="tl_page.business_address_country.0">
         <source>کشور</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_address_country.1">
+      <trans-unit id="tl_page.business_address_country.1">
         <source>کشور سازمان را وارد کنید.</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_same_as.0">
+      <trans-unit id="tl_page.business_same_as.0">
         <source>شبکه‌های اجتماعی</source>
       </trans-unit>
-      <trans-unit id="tl_page.orgschema_same_as.1">
+      <trans-unit id="tl_page.business_same_as.1">
         <source>نشانی پروفایل‌های شبکه‌های اجتماعی سازمان را وارد کنید.</source>
       </trans-unit>
     </body>
