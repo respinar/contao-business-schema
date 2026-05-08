@@ -36,10 +36,11 @@ Start by choosing the **Schema type** — either `Organization` or `Local busine
 - Schema type *(Organization or Local business)*
 - Name
 - Legal name
-- Alternate name *(comma-separated to allow multiple names)*
+- Founding date *(ISO 8601, e.g. `1995-03-14`)*
+- Alternate name *(add multiple names as separate entries)*
 - Description
 - Website URL
-- Logo
+- Logo *(output as an image object with URL, width and height)*
 
 ### Contact
 
