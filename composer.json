@@ -1,7 +1,7 @@
 {
-    "name": "respinar/contao-organization-schema",
+    "name": "respinar/contao-business-schema",
     "type": "contao-bundle",
-    "description": "Contao bundle for managing Organization Schema.org data from the root page",
+    "description": "Contao bundle for managing Business Schema.org data from the root page",
     "license": "MIT",
     "require": {
         "php": "^8.3",
@@ -12,11 +12,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Respinar\\OrganizationSchemaBundle\\": "src/"
+            "Respinar\\BusinessSchemaBundle\\": "src/"
         }
     },
     "extra": {
-        "contao-manager-plugin": "Respinar\\OrganizationSchemaBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Respinar\\BusinessSchemaBundle\\ContaoManager\\Plugin"
     },
     "config": {
         "sort-packages": true,
