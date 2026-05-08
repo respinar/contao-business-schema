@@ -19,6 +19,7 @@ PaletteManipulator::create()
             'business_type',
             'business_name',
             'business_legal_name',
+            'business_founding_date',
             'business_alternate_name',
             'business_url',
             'business_description',
@@ -55,6 +56,11 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['business_name'] = [
 $GLOBALS['TL_DCA']['tl_page']['fields']['business_legal_name'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
+];
+
+$GLOBALS['TL_DCA']['tl_page']['fields']['business_founding_date'] = [
+    'inputType' => 'text',
+    'eval' => ['maxlength' => 10, 'tl_class' => 'w50', 'placeholder' => 'YYYY-MM-DD', 'datepicker' => true, 'rgxp' => 'date'],
 ];
 
 $GLOBALS['TL_DCA']['tl_page']['fields']['business_alternate_name'] = [

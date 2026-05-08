@@ -38,6 +38,7 @@ The Organization configuration should provide these fields:
 * `business_type`
 * `business_name`
 * `business_legal_name`
+* `business_founding_date`
 * `business_alternate_name`
 * `business_description`
 * `business_url`
