@@ -21,8 +21,9 @@ use Spatie\SchemaOrg\WebSite;
 #[AsHook('generatePage')]
 class WebSiteSchemaListener
 {
-    public function __construct(private readonly ResponseContextAccessor $responseContextAccessor)
-    {
+    public function __construct(
+        private readonly ResponseContextAccessor $responseContextAccessor,
+    ) {
     }
 
     public function __invoke(PageModel $pageModel): void
@@ -35,7 +36,10 @@ class WebSiteSchemaListener
 
         $responseContext = $this->responseContextAccessor->getResponseContext();
 
-        if (null === $responseContext || !$responseContext->has(JsonLdManager::class)) {
+        if (
+            null === $responseContext
+            || !$responseContext->has(JsonLdManager::class)
+        ) {
             return;
         }
 
@@ -45,21 +49,36 @@ class WebSiteSchemaListener
             JsonLdManager::SCHEMA_ORG,
         );
 
-        if (empty($rootPage->pageTitle) || empty($rootPage->dns)) {
+        /*
+         * Website name
+         */
+        $websiteName = $rootPage->pageTitle ?: $rootPage->title;
+
+        if (empty($websiteName)) {
             return;
         }
 
-        $scheme = $rootPage->useSSL ? 'https://' : 'http://';
-        $baseUrl = $scheme.rtrim($rootPage->dns, '/');
+        /*
+         * Website URL
+         */
+         if (!empty($rootPage->dns)) {
+             $scheme = $rootPage->useSSL ? 'https://' : 'http://';
+             $websiteUrl = $scheme.rtrim($rootPage->dns, '/').'/';
+         } else {
+             $websiteUrl = rtrim($rootPage->getAbsoluteUrl(), '/').'/';
+         }
 
-        $websiteId = $baseUrl.'/#website';
+        /*
+         * WebSite Schema
+         */
+        $websiteId = $websiteUrl.'#website';
 
         $website = new WebSite();
 
         $website
             ->identifier($websiteId)
-            ->name($rootPage->pageTitle)
-            ->url($baseUrl.'/')
+            ->name($websiteName)
+            ->url($websiteUrl)
         ;
 
         $graph->add($website);
