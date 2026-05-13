@@ -24,7 +24,7 @@ use Spatie\SchemaOrg\ImageObject;
 use Spatie\SchemaOrg\PostalAddress;
 
 #[AsHook('generatePage')]
-class GeneratePageListener
+class OrganizationSchemaListener
 {
     public function __construct(
         private readonly ResponseContextAccessor $responseContextAccessor,
